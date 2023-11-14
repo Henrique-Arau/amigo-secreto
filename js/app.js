@@ -38,7 +38,7 @@ function sortear() {
     for (let i = 0; i < amigos.length; i++) {
 
         if (i == amigos.length - 1) {
-            sorteio.innerHTML = sorteio.innerHTML + amigos[i] + ' --> ' + amigos[0] + ', ';
+            sorteio.innerHTML = sorteio.innerHTML + amigos[i] + ' --> ' + amigos[0] + ':';
         } else {
             sorteio.innerHTML = sorteio.innerHTML + amigos[i] + ' --> ' + amigos[i + 1] + ', ';
         }
@@ -62,4 +62,27 @@ function reiniciar() {
 
     document.getElementById('lista-amigos').innerHTML = '';
     document.getElementById('lista-sorteio').innerHTML = '';
+}
+
+function ApenasLetras(e, t) {
+    try {
+        if (window.event) {
+            var charCode = window.event.keyCode;
+        } else if (e) {
+            var charCode = e.which;
+        } else {
+            return true;
+        }
+        if (
+            (charCode > 64 && charCode < 91) || 
+            (charCode > 96 && charCode < 123) ||
+            (charCode > 191 && charCode <= 255) // letras com acentos
+        ){
+            return true;
+        } else {
+            return false;
+        }
+    } catch (err) {
+        alert(err.Description);
+    }
 }
