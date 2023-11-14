@@ -65,7 +65,7 @@ body {
   flex-direction: column;
   gap: 30px;
   justify-content: start;
-  padding: 50px;
+  padding: 140px;
 }
 
 .friends__container {
@@ -78,7 +78,7 @@ body {
   font-weight: 400;
   justify-content: center;
   line-height: 160%;
-  margin-top: 1rem;
+  margin-top: -1;
   padding: 24px;
   width: 453px;
 }
@@ -88,13 +88,15 @@ body {
   font-size: 21px;
   font-weight: 400;
   line-height: 160%;
+  text-transform: uppercase;
 }
 
 .friends__title {
   color: #1875e8;
   font-size: 24px;
-  font-weight: 700;
-  line-height: 110%;
+  font-weight: 400;
+  line-height: 100%;
+  padding: 16px 24px;
   display:block;
 }
 
@@ -119,6 +121,7 @@ body {
   color: #fff;
   display: flex;
   font-size: 21px;
+  text-transform: uppercase;
   font-weight: 400;
   height: 56px;
   margin-bottom: 32px;
@@ -137,7 +140,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 110%;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .form__link {
@@ -166,10 +169,11 @@ body {
   border-radius: 8px;
   display: flex;
   font-size: 21px;
+  text-transform: uppercase;
   font-weight: 400;
   justify-content: center;
   line-height: 160%;
-  margin-top: 1rem;
+  margin-top: -1;
   padding: 24px;
   width: 453px;
 }
