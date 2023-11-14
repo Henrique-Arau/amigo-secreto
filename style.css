@@ -4,6 +4,7 @@ body {
   position: relative;
 }
 
+
 .background__detail {
   background-color: #00f4bf;
   height: calc(100% - 389px);
@@ -94,6 +95,7 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 110%;
+  display:block;
 }
 
 .form {
@@ -158,11 +160,11 @@ body {
 
 .prizeDraw__container {
   color: #fff;
-  font-size: 21px;
+  font-size: max(60px, 1vw);
   font-style: italic;
   font-weight: 700;
   height: 199px;
-  line-height: 160%;
+  line-height: 150%;
   margin-top: 1rem;
 }
 
@@ -170,7 +172,9 @@ body {
   color: #00f4bf;
   font-size: 24px;
   font-weight: 700;
-  line-height: 110%;
+  line-height: normal;
+  padding: 16px 24px;
+  display:block;
 }
 
 .primary {
